@@ -1,0 +1,1 @@
+/usr/local/share/vim/vim74/plugin/latex_template.vim
