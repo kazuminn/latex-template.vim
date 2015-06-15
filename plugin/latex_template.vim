@@ -11,20 +11,11 @@ let g:loaded_latex_template = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! -nargs=* LatexTemplate :call MakeTemplate(<f-args>)
+command! -nargs=* LatexTemplate :call s:MakeTemplate(<f-args>)
 
-function! MakeTemplate(...)
+function! s:MakeTemplate(...)
         r ~/latex_template.tex
-        let ena = 3 
-        let n = 0 
-"        if n < ena 
- "               execute '%s/'"arg".n.'/\=a:000[n]/'
-"               let n += 1
-       " endif
-        for _ in a:000
                 silent! %s/arg\([0-9]\+\)/\=get(a:000, submatch(1)-1, '')/g
-                let n += 1
-        endfor
 endfunction
 
 
