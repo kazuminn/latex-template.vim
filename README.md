@@ -27,5 +27,6 @@ NeoBundle 'kazuminn/latex_template.vim'
 
 
 #attention
+* 何も書いてないバッファで使用すること
 * テンプレートの中のargと引数の数が同じでないと挙動がおかしいです。
 * Look at :help
