@@ -22,8 +22,8 @@ function! MakeTemplate(...)
 "               let n += 1
        " endif
         for _ in a:000
-        ¦       silent! %s/arg\([0-9]\+\)/\=get(a:000, submatch(1)-1, '')/g
-        ¦       let n += 1
+                silent! %s/arg\([0-9]\+\)/\=get(a:000, submatch(1)-1, '')/g
+                let n += 1
         endfor
 endfunction
 
