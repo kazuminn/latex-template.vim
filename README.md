@@ -13,6 +13,12 @@
 :LatexTemplate タイトル　名前 テンプレート 
 </pre>
 
+#install
+neobundleとか
+<pre>
+NeoBundle 'kazuminn/latex_template.vim'
+</pre>
+
 #Setting
 * ホームディレクトリーにtexテンプレートを置く
 * テンプレートの中の置換したい場所をarg0,arg1...と書いてください。
