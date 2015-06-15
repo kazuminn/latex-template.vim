@@ -15,7 +15,7 @@ command! -nargs=* LatexTemplate :call s:MakeTemplate(<f-args>)
 
 function! s:MakeTemplate(...)
         r ~/latex_template.tex
-                silent! %s/arg\([0-9]\+\)/\=get(a:000, submatch(1)-1, '')/g
+        silent! %s/arg\([0-9]\+\)/\=get(a:000, submatch(1)-1, '')/g
 endfunction
 
 
